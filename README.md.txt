@@ -1,26 +1,30 @@
-# Pipeline ETL de Dados de Criptomoedas
+# 📊 Pipeline ETL de Dados de Criptomoedas
 
-Script Python que extrai, transforma e carrega cotações de criptomoedas da API CoinGecko para um banco de dados MySQL.
+Pipeline de dados que extrai, transforma e carrega cotações de criptomoedas em tempo real para um banco de dados MySQL.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- Python 3
-- Pandas
-- Requests
-- SQLAlchemy
-- MySQL
+- **Python 3**
+- **Pandas** - Manipulação e transformação de dados
+- **Requests** - Integração com API CoinGecko
+- **SQLAlchemy** - Conexão com banco de dados MySQL
+- **MySQL** - Armazenamento dos dados
 
-## Como Executar
+## ⚠️ Configuração Necessária
 
-1. Instale as dependências: `pip install -r requirements.txt`
-2. Execute o script: `python pipeline_cripto.py`
-
-## ⚠️ Configuração e Segurança
-
-Antes de executar o script, **configure suas credenciais do MySQL**:
+Antes de executar o script:
 
 1. Abra o arquivo `pipeline_cripto.py`
-2. Localize a seção `CONFIGURAÇÕES DO BANCO DE DADOS`
-3. Substitua os valores placeholders pelas suas credenciais reais:
-   - `DB_USER = 'seu_usuario'`
-   - `DB_PASSWORD = 'sua_senha_real'`
+2. Localize a seção **CONFIGURAÇÕES DO BANCO DE DADOS**
+3. Substitua os valores placeholders pelas suas credenciais:
+   - `DB_USER = 'seu_usuario_mysql'`
+   - `DB_PASSWORD = 'sua_senha_mysql'`
+
+## 🚀 Como Executar
+
+```bash
+# Instalar dependências
+pip install -r requirements.txt
+
+# Executar o pipeline
+python pipeline_cripto.py
