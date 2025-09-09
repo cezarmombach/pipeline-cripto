@@ -1,0 +1,4 @@
+requests==2.31.0
+pandas==2.0.3
+SQLAlchemy==2.0.20
+mysql-connector-python==8.1.0
